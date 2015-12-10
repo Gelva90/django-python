@@ -7,7 +7,9 @@ except:
     print "XML doc"
 if nmapresult:
     doc = xml.dom.minidom.parse(nmapresult)
+    print doc
     output = []
+    print output
     for host in doc.getElementsByTagName("host"):
         ip = ''
         ports = ''
